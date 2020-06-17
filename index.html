@@ -21,7 +21,7 @@
           <li><a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a></li>
           <li><a class="nav-item nav-link active" href="#">Receitas</a></li>
           <li><a class="nav-item nav-link" href="#">Quem somos</a></li>
-          <li><a class="nav-item nav-link" href="#">Contato</a></li>
+          <li><a class="nav-item nav-link" data-toggle="modal" data-target="#modal-contato" href="#">Contato</a></li>
         </ul>
       </div>
     </nav>
@@ -114,6 +114,40 @@
       </div>
      </section>
   </main>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nome Completo</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comentario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui seu comentario" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn botao-cor-especial">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
 
